@@ -22,26 +22,39 @@ composer require tuzlu07x/openai
 
 # Second step, The first thing we need to do is to call the necessary variables and include them in our class.
 
+## Variable: functionName
 ```
-Variable: functionName
-Description: The name of the function being called, in this case, it is get_current_weather.
 
-Variable: description
+The name of the function being called, in this case, it is get_current_weather.
+```
+
+## Variable: description
+```
 Description: A description of the purpose or intent of the function. In this example, it is "Bugün Antalya'da hava nasıl?" which translates to "How is the weather in Antalya today?"
+```
 
-Variable: type
+## Variable: type
+```
 Description: The data type expected as the response from the function. In this case, it is an object.
+```
 
-Variable: enum
+## Variable: enum
+```
 Description: A list of possible values for a particular parameter. In this example, it is an array containing 'celsius' and 'fahrenheit'.
+```
 
-Variable: model
+## Variable: model
+```
 Description: The specific model to be used for the API call. In this case, it is 'gpt-3.5-turbo-0613'.
+```
 
-Variable: location
+## Variable: location
+```
 Description: The parameter representing the city and state for which weather information is requested. It is of type string and has a description indicating the format of the location, e.g., "San Francisco, CA".
+```
 
-Variable: required
+## Variable: required
+```
 Description: An array indicating which parameters are required for the function call. In this example, the location parameter is marked as required.
 ```
 
