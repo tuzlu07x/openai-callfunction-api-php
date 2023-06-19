@@ -10,7 +10,7 @@ class ComposerStaticInit0ddb58da246f061e55f161580c5a2a4b
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
-        '6a85cf0db2f29a5ce2d196d1032aed88' => __DIR__ . '/../..' . '/src/helpers.php',
+        'edaadefced60bc4b8b2c8823ccd6c6c8' => __DIR__ . '/../..' . '/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -18,6 +18,7 @@ class ComposerStaticInit0ddb58da246f061e55f161580c5a2a4b
         array (
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Http\\Client\\' => 16,
+            'Parasut\\Openai\\' => 15,
         ),
         'G' => 
         array (
@@ -40,6 +41,10 @@ class ComposerStaticInit0ddb58da246f061e55f161580c5a2a4b
         'Psr\\Http\\Client\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-client/src',
+        ),
+        'Parasut\\Openai\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (
