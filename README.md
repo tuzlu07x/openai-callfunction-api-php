@@ -102,7 +102,3 @@ Description: An array indicating which parameters are required for the function 
 ```
 
 <p>I hope I could help.</p>
-
-# You can reach me at the address below
-
-<a href="https:://tuzlu.org">My Website </a>
