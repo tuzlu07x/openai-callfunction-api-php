@@ -1,0 +1,35 @@
+{
+    "name": "tuzlu07x/openai",
+    "description": "OpenAI Call Function API PHP",
+    "keywords": [
+        "php openai api",
+        "openai call function",
+        "chatgpt call function api",
+        "php",
+        "laravel"
+    ],
+     "autoload-dev": {
+        "psr-4": {
+            "Parasut\\Openai\\": "src"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Ftuzlu\\Openai\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "fatihtuzlu",
+            "email": "fatihtuzlu07@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.2",
+        "guzzlehttp/guzzle": "^7.2"
+    }
+}
