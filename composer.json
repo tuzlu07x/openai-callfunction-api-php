@@ -16,10 +16,7 @@
     "autoload": {
         "psr-4": {
             "Ftuzlu\\Openai\\": "src/"
-        },
-        "files": [
-            "src/helpers.php"
-        ]
+        }
     },
     "authors": [
         {

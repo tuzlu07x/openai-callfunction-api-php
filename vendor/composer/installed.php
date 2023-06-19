@@ -3,7 +3,7 @@
         'name' => 'tuzlu07x/openai',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '2753e62dbc66a4d4ba1df4fe21682c4617b6b40d',
+        'reference' => '84692c95b1890eeaa3432ac6f3f6b44e6e4df02c',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -103,7 +103,7 @@
         'tuzlu07x/openai' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '2753e62dbc66a4d4ba1df4fe21682c4617b6b40d',
+            'reference' => '84692c95b1890eeaa3432ac6f3f6b44e6e4df02c',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
