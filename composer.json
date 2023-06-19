@@ -8,7 +8,7 @@
         "php",
         "laravel"
     ],
-     "autoload-dev": {
+    "autoload-dev": {
         "psr-4": {
             "Parasut\\Openai\\": "src"
         }
