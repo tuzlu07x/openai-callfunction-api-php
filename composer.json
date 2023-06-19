@@ -1,6 +1,7 @@
 {
     "name": "tuzlu07x/openai",
     "description": "OpenAI Call Function API PHP",
+    "license": "MIT",
     "keywords": [
         "php openai api",
         "openai call function",
