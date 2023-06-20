@@ -17,7 +17,6 @@ class ComposerStaticInit0ddb58da246f061e55f161580c5a2a4b
         array (
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Http\\Client\\' => 16,
-            'Parasut\\Openai\\' => 15,
         ),
         'G' => 
         array (
@@ -27,7 +26,7 @@ class ComposerStaticInit0ddb58da246f061e55f161580c5a2a4b
         ),
         'F' => 
         array (
-            'Ftuzlu\\Openai\\' => 14,
+            'Ftuzlu\\OpenAI\\' => 14,
         ),
     );
 
@@ -41,10 +40,6 @@ class ComposerStaticInit0ddb58da246f061e55f161580c5a2a4b
         array (
             0 => __DIR__ . '/..' . '/psr/http-client/src',
         ),
-        'Parasut\\Openai\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
         'GuzzleHttp\\Psr7\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
@@ -57,7 +52,7 @@ class ComposerStaticInit0ddb58da246f061e55f161580c5a2a4b
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
-        'Ftuzlu\\Openai\\' => 
+        'Ftuzlu\\OpenAI\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),

@@ -9,14 +9,9 @@
         "php",
         "laravel"
     ],
-    "autoload-dev": {
-        "psr-4": {
-            "Parasut\\Openai\\": "src"
-        }
-    },
     "autoload": {
         "psr-4": {
-            "Ftuzlu\\Openai\\": "src/"
+            "Ftuzlu\\OpenAI\\": "src/"
         }
     },
     "authors": [
