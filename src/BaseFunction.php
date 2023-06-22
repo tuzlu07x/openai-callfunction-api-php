@@ -4,33 +4,44 @@ namespace Ftuzlu\OpenAI;
 
 abstract class BaseFunction
 {
-    abstract protected function name(): string;
-    abstract protected function description(): string;
-    abstract protected function type(): string;
-    abstract protected function enum(): array;
-    abstract protected function model(): string;
-    abstract protected function options(): array;
-    abstract protected function location(): array;
-    abstract protected function required(): array;
-    abstract protected function functions(): array;
-    abstract protected function messages(): array;
-    abstract protected function secondMessages(string $functionResponse, array $messages): array;
-    abstract protected function secondOptions(string $functionResponse, array $message): array;
+    abstract protected static function name(): string;
+    abstract protected static function description(): string;
+    abstract protected static function type(): string;
+    abstract protected static function model(): string;
+    abstract protected static function required(): array;
+    abstract protected function handle(): string;
+    abstract protected function parameters(): array;
+    abstract protected function properties(): array;
 
-    protected function __construct(
-        protected OpenAI $openAI
-    ) {
+    public function function(): array
+    {
+        return [
+            "name" => static::name(),
+            "description" => static::description(),
+            "parameters" => [
+                "type" => static::type(),
+                "properties" => static::properties(),
+                "required" => static::required()
+            ],
+        ];
     }
 
-    public function callFunction()
+    protected function json(array $data): string
     {
-        $response = $this->openAI->chat('v1/chat/completions', static::options());
-        return $response;
+        return json_encode($data, JSON_PRETTY_PRINT);
     }
 
-    public function secondCallFunction(string $functionResponse, array $messages)
+    protected static function parameter(string $name, string $type, ?string $description = null, bool $required = false): Parameter
     {
-        $response = $this->openAI->chat('v1/chat/completions', static::secondOptions($functionResponse, $messages));
-        return $response;
+        return new Parameter($name, $type, $description, $required);
+    }
+
+    protected function baseParameter(array $parameters): array
+    {
+        $properties = [];
+        foreach ($parameters as $key => $value) {
+            $properties[$value->name] = $value->toArray();
+        }
+        return $properties;
     }
 }

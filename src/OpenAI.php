@@ -5,16 +5,13 @@ namespace Ftuzlu\OpenAI;
 class OpenAI
 {
     public function __construct(
-        protected Client $client,
-        protected array $extraData = [],
+        private $className,
+        private Client $client,
     ) {
     }
 
-    public function chat(string $url, array $options): mixed
+    public function chat(array $functions, array $messages = [], string $classFunctionName): mixed
     {
-        if ($this->extraData !== [])
-            $options = array_merge($options, $this->extraData);
-
-        return $this->client->post($url, $options);
+        return new Chat($this->className, $this->client, $functions, $messages, $classFunctionName);
     }
 }

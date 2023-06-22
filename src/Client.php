@@ -43,6 +43,11 @@ class Client
         return $this->request('GET', $url, $options);
     }
 
+    public function chat(array $data): mixed
+    {
+        return $this->post('/v1/chat/completions', ['json' => $data]);
+    }
+
     private function request(string $method, string $url, array $options): mixed
     {
         try {

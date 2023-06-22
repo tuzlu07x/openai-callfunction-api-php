@@ -1,14 +1,3 @@
-<h3 align="center">OpenAI Callfunction API PHP PACKAGE<br></h3>
-
-## Installation
-
-```
-composer require tuzlu07x/openai
-```
-
-# Usage With Function
-
-```php
 <?php
 
 use Ftuzlu\OpenAI\BaseFunction;
@@ -85,30 +74,4 @@ $functions = [
 $client = new Client($yourApiKey, $yourOrganization);
 $openAI = new OpenAI($example, $client);
 $chat = $openAI->chat($functions, $messages, 'handle'); //handle is functionName on example
-var_dump($chat->say('How is weather in London?'));
-
-
-```
-
-# First step, You call Client class
-
-```php
-<?php
-    use Ftuzlu\OpenAI\Client;
-
-    $yourAPIKey=XXXXXX;
-    $yourOrganization=XXXXX;
-    $baseUrl = 'https://api.openai.com/';
-    $client = new Client($yourApiKey, $yourOrganization, $baseUrl);
-```
-
-# First step, You call Client class
-
-```php
-<?php
-    use Ftuzlu\OpenAI\OpenAI;
-
-   $example = new Example(); //Example is your Class
-   $openAI = new OpenAI($example, $client);
-   $chat = $openAI->chat($functions, $messages, 'handle'); //handle is also your class's functionName.
-```
+var_dump($chat->say('Londradaki hava durumu nedir yorumlar misin?'));
