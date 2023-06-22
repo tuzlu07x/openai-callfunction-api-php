@@ -102,7 +102,7 @@ var_dump($chat->say('How is weather in London?'));
     $client = new Client($yourApiKey, $yourOrganization, $baseUrl);
 ```
 
-# First step, You call Client class
+# Second Step
 
 ```php
 <?php
