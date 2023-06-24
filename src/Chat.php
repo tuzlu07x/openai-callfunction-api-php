@@ -51,7 +51,7 @@ class Chat
 
         if (isset($message['function_call'])) {
             $functionName = $message["function_call"]["name"];
-            $result = $this->classFunction($this->classFunctionName, Example::class, $this->messages);
+            $result = $this->classFunction($this->classFunctionName, $this->className, $this->messages);
             $this->messages[] = [
                 'role' => 'function',
                 'name' => $functionName,
